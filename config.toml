@@ -13,7 +13,7 @@ publishDir = "public"
 
   [params.profile]
     enable = true
-    name = "Ujval"
+    name = "Achyut"
     tagline = "Front-End Developer"
 
   [params.contact]
