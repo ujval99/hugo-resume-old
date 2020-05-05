@@ -1,0 +1,13 @@
+<section class="project-section py-3">
+  <h3 class="text-uppercase resume-section-heading mb-4">{{ "Core Skills" }}</h3>
+  <ul class="resume-social-list list-inline row text-muted">
+    {{ range .Site.Params.coreskills.list }}
+    <li class="col-md-3 list-inline-item mb-lg-0 mr-0">
+      <div>
+        <i class="{{ .icon }} fa-2x mr-2 resume-section-icon-color" data-fa-transform="down-4"></i>
+        <span class="d-none d-lg-inline-block text-muted">{{ .title }}</span>
+      </div>
+    </li>
+    {{ end }}
+  </ul>
+</section>

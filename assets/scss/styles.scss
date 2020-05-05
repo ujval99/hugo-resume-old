@@ -1,0 +1,113 @@
+// Define theme colour scheme
+$theme-color-primary: {{ .Site.Params.primaryColor | default "#292929" }};
+$theme-text-color-primary: {{ .Site.Params.textPrimaryColor | default "#292929" }};
+$theme-text-color-secondary: lighten($theme-text-color-primary, 15%);
+$theme-text-color-light: lighten($theme-text-color-primary, 40%);
+$theme-border-color:  lighten($theme-text-color-primary, 60%);
+
+$theme-colors: (
+  "primary":  $theme-color-primary,
+  "secondary":  $theme-text-color-secondary,
+);
+
+@import "bootstrap/scss/bootstrap.scss";
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: $theme-text-color-secondary;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $theme-text-color-primary;
+  font-weight: bold;
+}
+
+.resume-wrapper {
+  border: 1px solid rgba(0, 0, 0, 0.025);
+}
+
+.resume-section-heading {
+  position: relative;
+  padding-left: 1rem;
+  font-size: 1.125rem;
+  letter-spacing: 0.15rem;
+  color: $theme-color-primary;
+   &:before {
+     content: "";
+      display: inline-block;
+      width: 5px;
+      height: 100%;
+      background: $theme-color-primary;
+      position: absolute;
+      left: 0;
+      top: 0;
+   }
+}
+
+.resume-section-icon-color {
+  color: $theme-color-primary;
+}
+
+.resume-name {
+  font-size: 2.75rem;
+  font-weight: 900;
+  letter-spacing: 0.4rem;
+  color: $theme-color-primary;
+
+}
+
+.resume-tagline {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+.resume-contact {
+  border-left: 1px solid rgba(0, 0, 0, 0.08);
+  font-size: 0.75rem;
+}
+
+a.resume-link {
+  color: $theme-text-color-secondary;
+  &:hover {
+    color: $theme-color-primary;
+  }
+}
+
+.resume-intro {
+  font-size: 0.875rem;
+}
+
+.resume-main {
+  .item-title {
+    font-size: 1rem;
+  }
+  .item-meta {
+    font-size: 0.75rem;
+  }
+  .item-content {
+    font-size: 0.875rem;
+  }
+}
+
+.resume-aside {
+  border-left: 1px solid rgba(0, 0, 0, 0.08);
+  .item {
+    font-size: 0.875rem;
+  }
+  .item-title {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .resume-aside {
+    border-left: 0;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .resume-contact {
+    border-left: 0;
+  }
+}

@@ -1,0 +1,163 @@
+baseURL = "https://ujval99.github.io/"
+languageCode = "en-us"
+title = "Resume Exercise"
+disableKinds = ["taxonomy", "taxonomyTerm"]
+publishDir = "public"
+
+[params]
+  author = "Ujval"
+  description = "Front-End Developer"
+
+  primaryColor = "#0080ff"
+  textPrimaryColor = "#292929"
+
+  [params.profile]
+    enable = true
+    name = "Ujval"
+    tagline = "Front-End Developer"
+
+  [params.contact]
+    enable = true
+    location = "Ahmedabad, India"
+    
+    [[params.contact.list]]
+    icon = "fab fa-linkedin"
+    url = "#"
+    text = "Professional Insights"
+    
+    [[params.contact.list]]
+    icon = "fab fa-drupal"
+    url = "#"
+    text = "DO Profile"
+
+  [params.summary]
+    enable = true
+    text = "I have 8+ years of experience in web application development using React JS, Node.js, Jamstack, Drupal, drupal headless. During early stage I’d work with drupal development. As technology changes I’ve jumped into various tech and improved my skills time by time. I used agile methodology for development. I have been working on various sector's projects like IT marketplace for innovations, solar power in energy sector, start-up data insights in sport sector, etc. I’ve worked with fortune 500 companies and able to work with different time zone."
+
+  [params.coreskills]
+      enable = true
+
+      [[params.coreskills.list]]
+      icon = "far fa-check-square"
+      title = "Bootstrap"
+      [[params.coreskills.list]]
+      icon = "far fa-check-square"
+      title = "jQuery"
+      [[params.coreskills.list]]
+      icon = "far fa-check-square"
+      title = "Angular"
+      [[params.coreskills.list]]
+      icon = "far fa-check-square"
+      title = "AWS"
+      [[params.coreskills.list]]
+      icon = "far fa-check-square"
+      title = "NodeJS"
+      [[params.coreskills.list]]
+      icon = "far fa-check-square"
+      title = "Docker"
+      [[params.coreskills.list]]
+      icon = "far fa-check-square"
+      title = "SASS"
+      [[params.coreskills.list]]
+      icon = "far fa-check-square"
+      title = "Javascript"
+      [[params.coreskills.list]]
+      icon = "far fa-check-square"
+      title = "Hugo"
+      [[params.coreskills.list]]
+      icon = "far fa-check-square"
+      title = "REST API"
+      [[params.coreskills.list]]
+      icon = "far fa-check-square"
+      title = "CircleCI"
+      [[params.coreskills.list]]
+      icon = "far fa-check-square"
+      title = "GitHub"
+      [[params.coreskills.list]]
+      icon = "far fa-check-square"
+      title = "GitLab"
+      [[params.coreskills.list]]
+      icon = "far fa-check-square"
+      title = "PostgreSQL"
+      [[params.coreskills.list]]
+      icon = "far fa-check-square"
+      title = "Redux"
+      [[params.coreskills.list]]
+      icon = "far fa-check-square"
+      title = "Jekyll"
+
+    [params.projects]
+      enable = true
+
+      [[params.projects.list]]
+      title = "Friday Media Groups"
+      meta = "Drupal, Zurb, SASS"
+      tagline = "Friday Media Group have their own two product platforms - Spidersnet and Marketplace Infinity which are currently running under Drupal-7."
+
+      [[params.projects.list]]
+      title = "Configrd"
+      meta = "Hugo"
+      tagline = "Hugo Theme Development based on the GitBook Design. Configrd is a SaaS startup and they wanted a GitBook lookalike theme for Hugo to host their documentation on Netlify. The theme is now opensource."
+
+      [[params.projects.list]]
+      title = "Couples Resorts"
+      meta = "Hugo"
+      tagline = "A massive site with over 400 pages and very complex design migration to Hugo to replace their existing PHP based CMS."
+
+    [params.experience]
+        enable = true
+
+        [[params.experience.list]]
+        name = "HTML5/CSS3"
+        level = "5+ years"
+        [[params.experience.list]]
+        name = "Javascript"
+        level = "5+ years"
+        [[params.experience.list]]
+        name = "ReactJs"
+        level = "3 years"
+        [[params.experience.list]]
+        name = "Jamstack"
+        level = "2 years"
+
+    [params.skills]
+        enable = true
+
+        [[params.skills.list]]
+        title = "RDBMS"
+        [[params.skills.list.items]]
+        details = "Mysql, SqlServer, Oracle, MS Access"
+        [[params.skills.list]]
+        title = "OS"
+        [[params.skills.list.items]]
+        details = "Linux, Windows and DOS"
+        [[params.skills.list]]
+        title = "Web & App Server"
+        [[params.skills.list.items]]
+        details = "Nginx, LAMP, WAMP, Tomcat, IIS, AWS"
+        [[params.skills.list]]
+        title = "Graphical Tools"
+        [[params.skills.list.items]]
+        details = "Adobe Photoshop, Gimp"
+        [[params.skills.list]]
+        title = "Project Management Tools"
+        [[params.skills.list.items]]
+        details = "Slack, Jira, Basecamp, Flowdock, Teambox/Redbooth, Redmine, Active-Collab"
+        [[params.skills.list]]
+        title = "Repository Tools"
+        [[params.skills.list.items]]
+        details = "Git, Bitbucket, SVN"
+
+    [params.information]
+        enable = true
+
+        [[params.information.list]]
+        title = "Contributions"
+        [[params.information.list.items]]
+        details = "Templates"
+        [[params.information.list.items]]
+        details = "Module & Plugins"
+
+        [[params.information.list]]
+        title = "Others"
+        details = "Workshops, Seminar"
