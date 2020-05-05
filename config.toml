@@ -1,4 +1,4 @@
-baseURL = "https://ujval99.github.io/hugo-resume/"
+baseURL = "https://ujval99.github.io/"
 languageCode = "en-us"
 title = "Resume Exercise"
 disableKinds = ["taxonomy", "taxonomyTerm"]
